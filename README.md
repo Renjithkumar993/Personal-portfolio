@@ -6,7 +6,7 @@ This project is a portfolio website for to showcase My work samples to potential
 ## installation
 There are no requirement of installing any application to run this .
 
-The website is built using HTML, CSS, and JavaScript.
+The website is built using HTML and CSS.
 The website is responsive and adapt to different screen sizes and devices.
 The website is deployed using GitHub Pages.
 
