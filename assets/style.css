@@ -98,14 +98,30 @@ img::after{
     width: 100%;
     position: relative;
 }
+
+
 .title h3{
 position: absolute;
-top: 400px;
+top: 450px;
 left: 70%;
 color: white;
 font-size: 30px;
 animation: move-right 10s linear infinite;
 animation-direction: alternate;
+}
+.title h4{
+    position: absolute;
+    top: 380px;
+    left:40%;
+    font-size: 40px;
+    overflow: hidden;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    white-space: nowrap;    
+    margin: 0 auto;
+    animation:
+    typing 5s steps(36, end) forwards
+
 }
 
 .title h3:hover{
@@ -177,7 +193,6 @@ animation-direction: alternate;
   border:10px solid rgb(8, 8, 45);
   opacity: 0.4;
   position: relative;
-  box-shadow: 3px 3px #1C2331, -1em 0 .4em rgb(7, 7, 7);
   width: 90%;
   transition: .5s;
   flex-grow: 1;
@@ -369,6 +384,11 @@ nav ul li{
     display: none;
 }
 
+.title h4{
+    display: none;
+    animation: none;
+}
+
 
 .profile{
     display: block;
@@ -430,9 +450,13 @@ footer h3{
 
 }
 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 20% }
 
+}
 @keyframes move-right {
     from { transform: translateX(-230%); }
-    to { transform: translateX(50px); }
+    to { transform: translateX(margin); }
   }
   
