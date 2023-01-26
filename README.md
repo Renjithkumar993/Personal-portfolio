@@ -14,7 +14,8 @@ The website is deployed using GitHub Pages.
 ## Usage
 To access the website please visit https://renjithkumar993.github.io/Refactoring--Horiseon-Marketing-Agency-Website/
 
-The website will be the exact replica of the screenshot below
+The website will be the exact replica of the screenshot below.
+![Alt text](/assets/images/Sreenshot%20of%20the%20website.png "Replica of the website")
 
 
 
