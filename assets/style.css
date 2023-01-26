@@ -1,0 +1,438 @@
+
+*{
+    font-family: 'Unbounded', cursive;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+box-sizing: border-box;
+}
+
+body{
+    background-color:#C7C7CC;
+}
+
+/* Header */
+header{
+    background-color: #1C2331;
+}
+#Nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+#Nav-links ul{
+    display: inline-flex;
+
+}
+#Nav-links ul li {
+    margin: 20px;
+    list-style-type: none;
+}
+#Nav-links ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    position: relative;
+    transition: 0.3s;
+
+}
+#Nav-links ul li a:hover{
+    color: white;
+    font-size: 28px;
+
+}
+
+#Nav-links ul li a:hover::after{
+    width: 100%;
+    transition: .5s ease-in-out;
+
+}
+#Nav-links ul li a::after{  
+  content: '';
+  width: 0%;
+  height: 1px;
+  background: #C7C7CC;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+       
+
+
+
+    
+#Nav-links h2{
+    font-size: 30px;
+    color: white;
+    background-color: #1C2331;
+    padding: 25px;
+    border-radius: 50px;
+    transition: 1s ease-in-out;
+}
+#Nav-links h2:hover{
+    background: linear-gradient(to right,#1C2331,#FFFFFF);
+    color: black;
+    border-radius: 50px;
+}
+
+
+#Nav-links h2::after{
+
+    content: url(./images/unnamed.jpg);
+    padding-left: 10px;
+}
+
+
+
+
+/* image below header */
+img{
+    width: 100%;
+    height: 300px;
+}
+img::after{
+    width: 100%;
+    position: relative;
+}
+.title h3{
+position: absolute;
+top: 400px;
+left: 70%;
+color: white;
+font-size: 30px;
+animation: move-right 10s linear infinite;
+animation-direction: alternate;
+}
+
+.title h3:hover{
+    color: white;
+    font-size: 34px;
+    animation-play-state: paused;
+
+}
+.title h3::after{
+  content: '';
+  width: 75%;
+  height: 1px;
+  background:white;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  top:0;
+  right: 0;
+}
+.title h3:hover::after{
+    height: 10px;
+    border-radius: 40px;
+}
+/* section of the site */
+
+.profile{
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#catogories{
+    font-size: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-right: 2%;
+    font-weight: bold;
+    text-align: right;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  
+}
+#respo{
+ font-size: 25px; 
+
+}
+
+#respo:hover{
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+
+
+.mywork{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2.5%;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+.job1{
+  color: white;
+  border:10px solid rgb(8, 8, 45);
+  opacity: 0.4;
+  position: relative;
+  box-shadow: 3px 3px #1C2331, -1em 0 .4em rgb(7, 7, 7);
+  width: 90%;
+  transition: .5s;
+  flex-grow: 1;
+  order: 0;
+}
+
+
+.job1 h4 {
+    position: absolute;
+    top: 0%;
+    left:0%;
+    background-color: #1C2331;
+    font-size: 40px;
+    padding: 20px;
+    transition: 0.5s;
+
+    
+}
+
+
+
+.job1 h5 {
+    position: absolute;
+   bottom: 0%;
+    right:0%;
+    background-color: #1C2331;
+    font-size: 40px;
+    padding: 20px;
+    transition: 1s;
+}
+.job1 img{
+ height: 70vh;
+}
+
+.job1:hover{
+    opacity: 1;
+
+}
+
+.job1:hover h4{
+    transform: rotate(360deg);
+}
+.job1:hover h5{
+    transform: rotate(360deg);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.job2{
+    color: white;
+    text-align: start;
+    border:10px solid rgb(8, 8, 45);
+    opacity: 0.4;
+    position: relative;
+    flex-grow: 1;
+    margin-top: 10px;
+
+
+}
+
+.job2 h4 {
+
+    position: absolute;
+    top: 0%;
+    left:0%;
+    background-color: #1C2331;
+    font-size:20px;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+    
+}
+.job2 h5 {
+    position: absolute;
+    top: 80%;
+    right:0%;
+    background-color: #1C2331;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.job2:hover{
+    opacity: 1;
+}
+
+.job2:hover  h4 {
+    padding-right: 379.5px;
+    transform: rotate(360deg);
+    
+}
+.job2:hover h5{
+    top: 0;
+}
+
+
+/* footer */
+footer{
+    background-color: #8B4513;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+   padding: 20px;
+}
+.footer-links a{
+    padding: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.2s;
+
+
+}
+
+.footer-links a:hover{
+    font-size: 30px;
+    color: white;
+
+}
+
+.footer-form{
+    padding: 20px;
+
+color: white;
+}
+
+
+.copyright{
+
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+
+.footer-form label{
+    display: block;
+}
+.footer-form textarea{
+    height: 100px;
+    width: 250px;
+}
+#btn{
+    font-size: 20px;
+    position: absolute;
+    top: 74%;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1000px) {
+  
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+nav ul{
+    flex-direction: column;
+
+}
+nav ul li{
+    padding: 0%;
+    margin: 0%;
+}
+
+.title h3, section img{
+    display: none;
+}
+
+
+.profile{
+    display: block;
+    margin: 0%;
+    padding: 10px
+
+}
+#catogories{
+    font-size: 40px;
+    margin: 0%;
+    padding: 0%;
+}
+
+#respo{
+    font-size: 20px;
+}
+
+.mywork{
+    flex-basis: 0;
+}
+
+
+
+.job1 img{
+    width: 100%;
+    height: 300px;
+    order: 1;
+  
+}
+.job2 h5,.job1 h5,.job2 h4,.job1 h4 {
+    font-size: 10px;
+}
+
+.job1,.job2{
+    box-shadow: none;
+    border: none;
+    
+}
+
+footer{
+    justify-content: space-around;
+
+}
+footer h3{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@keyframes move-right {
+    from { transform: translateX(-230%); }
+    to { transform: translateX(50px); }
+  }
+  
