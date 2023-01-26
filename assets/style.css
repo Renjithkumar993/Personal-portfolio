@@ -120,7 +120,7 @@ animation-direction: alternate;
     white-space: nowrap;    
     margin: 0 auto;
     animation:
-    typing 10s steps(36, end) forwards
+    typing 10s steps(36, end) forwards;
 
 }
 

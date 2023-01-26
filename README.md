@@ -3,7 +3,7 @@
 ## Description
 This project is a portfolio website for to showcase My work samples to potential employers. The website will feature the  name, a recent photo or avatar, and links to sections about the developer, their work, and how to contact me.
 
-## installation
+## Installation
 There are no requirement of installing any application to run this .
 
 The website is built using HTML and CSS.
